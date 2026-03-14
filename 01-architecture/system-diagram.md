@@ -2,15 +2,20 @@
 
 ```mermaid
 flowchart TB
-    A[Tool Layer<br/>Analytics • Support • Research • Experimentation] --> B[Knowledge Layer<br/>NotebookLM<br/>Research Corpus • Customer Voice • Docs • Insights]
-    B --> C[Skill Layer<br/>pm-ai-skills<br/>Reusable PM Methods]
-    C --> D[Operating System Layer<br/>pm-ai-os<br/>Workflows • Templates • Evals • Automation]
-    D --> E[Demo Layer<br/>pm-ai-demo<br/>Sanitized Interview Walkthroughs]
+    A[Tool Layer<br/>Analytics • Support • Research • Experimentation]
+    B[Knowledge Layer<br/>NotebookLM<br/>Docs • Customer Voice • Research Corpus]
+    C[Skill Layer<br/>pm-ai-skills<br/>Reusable PM Methods]
+    D[Operating System Layer<br/>pm-ai-os<br/>Workflows • Templates • Evals • Automation]
+    E[Demo Layer<br/>pm-ai-demo<br/>Sanitized Interview Walkthroughs]
 
-    A -. raw signals .-> B
-    B -. grounded context .-> C
-    C -. structured outputs .-> D
-    D -. polished demonstration .-> E
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+
+    D -. workflow improvements .-> C
+    C -. new synthesis and outputs .-> B
+    D -. sanitized examples .-> E
 ```
 
 ## Overview
