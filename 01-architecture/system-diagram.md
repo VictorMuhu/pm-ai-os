@@ -18,6 +18,22 @@ flowchart TB
     D -. sanitized examples .-> E
 ```
 
+## Visual Summary
+
+The PM AI Operating System is designed as a layered stack.
+
+The Tool Layer produces raw signals from analytics, support, research, and experimentation systems.
+
+The Knowledge Layer organizes those signals inside NotebookLM as a research and memory layer.
+
+The Skill Layer contains reusable Claude Code Skills that turn context into structured PM outputs.
+
+The Operating System Layer defines workflows, templates, evals, and automation rules.
+
+The Demo Layer provides a safe, polished way to present the system externally.
+
+---
+
 ## Overview
 
 The PM AI Operating System is a layered system designed to help product managers move from raw information to product decisions quickly and consistently.
