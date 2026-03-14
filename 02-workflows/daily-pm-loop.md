@@ -1,31 +1,69 @@
 # Daily PM Loop
 
-> Starter file. Define your daily AI-assisted PM routine here.
+A structured daily workflow for a product manager using the PM AI operating system.
 
-## Purpose
+---
 
-A lightweight daily workflow to stay oriented, process inputs, and make progress on the most important work.
+## Morning Scan
 
-## Inputs
+Start the day with a quick orientation before going deep on any task.
 
-- Calendar and meeting notes from yesterday
-- Slack / email threads requiring a response or decision
-- Current sprint or project status
+- review key metrics for unexpected movement
+- scan customer signals: new tickets, feedback, or escalations
+- identify urgent issues that need same-day attention
+- reprioritize the day if anything critical has surfaced
 
-## Loop steps
+---
 
-1. **Morning orient** (10 min): Review priorities, flag blockers, confirm today's focus
-2. **Process inputs** (15 min): Triage messages, tag action items, route to relevant workflows
-3. **Deep work block**: Use relevant skills (PRD writing, synthesis, analysis) for primary task
-4. **EOD close** (10 min): Log decisions made, update stakeholders, prepare tomorrow's focus
+## Discovery Work
 
-## AI touchpoints
+Advance customer understanding and keep the research layer current.
 
-- Use Customer Synthesis or Interview Analysis skill after interviews
-- Use Stakeholder Update skill for any required async updates
-- Use Spec Critic skill before sending a doc for review
+- review notes from recent customer interviews or discovery calls
+- use the `customer-synthesis` or `interview-analysis` skills to extract signal
+- update discovery notes and tag new insights in NotebookLM
+- flag themes that may affect current priorities
 
-## Notes
+---
 
-- Customize this loop to your actual work rhythm.
-- Keep the loop lightweight — it should reduce friction, not add it.
+## Execution Work
+
+Move active initiatives forward.
+
+- refine PRD drafts using the `prd-writer` skill
+- use the `spec-critic` skill to red-team docs before sharing with engineering
+- break features into tickets using the `ticket-breakdown` skill
+- coordinate open questions with engineering and design
+- update open questions logs and unblock dependencies
+
+---
+
+## Analytics Review
+
+Stay close to product performance.
+
+- monitor key metrics for the current initiative
+- investigate unexpected changes using the `metric-debugging` skill
+- check experiment status and assess progress against decision criteria
+- flag any metrics that need a team discussion
+
+---
+
+## Stakeholder Communication
+
+Keep stakeholders informed and decisions moving.
+
+- share progress updates using the `stakeholder-update` skill
+- clarify recent decisions and document rationale
+- surface risks or blockers proactively before they escalate
+- prepare any exec-facing summaries using the `exec-brief` skill
+
+---
+
+## System Maintenance
+
+Keep the PM AI operating system healthy.
+
+- add new learnings, documents, or research to NotebookLM
+- improve a skill definition if a workflow produced weak output
+- note any process gaps to address in the weekly or monthly loop
