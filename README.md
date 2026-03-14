@@ -1,31 +1,100 @@
-# pm-ai-os
+# PM AI OS
 
-The operating system for AI-assisted product management. This repo defines the architecture, workflows, templates, and automation that tie together the PM AI toolkit — from daily loops to quarterly planning.
+A private repository for my PM AI operating system.
 
-## Main Folders
+This repo contains the workflows, templates, evals, operating rules, setup instructions, and supporting materials that make the PM AI workflow actionable end to end.
 
-| Folder | What it contains |
-|---|---|
-| `01-architecture/` | System overview, tool map, repo boundaries, and diagrams |
-| `02-workflows/` | Recurring PM loops: daily, weekly, monthly, quarterly |
-| `03-templates/` | Reusable document templates (PRDs, decisions, retros, etc.) |
-| `04-evals/` | Evaluation rubrics for AI-generated PM artifacts |
-| `05-automation/` | Relay workflows, MCP setup, connector map, agent boundaries |
-| `06-notebooklm/` | NotebookLM structure, ingestion rules, and source tagging |
-| `07-examples/` | Sample inputs and outputs for reference and testing |
-| `08-roadmap/` | Versioned roadmap for the PM AI OS itself |
-| `09-ops/` | Setup checklist, security rules, and repo maintenance |
+## Purpose
 
-## What belongs here
+This repository exists to:
 
-- System-level documentation describing how the PM AI toolkit works together
-- Reusable templates and repeatable workflow definitions
-- Evaluation criteria and quality rubrics
-- Architecture decisions and tool integration notes
+- define how my PM AI system works across daily, weekly, monthly, and quarterly work
+- connect tools, workflows, and templates into one operating model
+- make the system portable and version-controlled
+- separate reusable skills from company-specific execution
+- provide a durable foundation for high-leverage PM work
 
-## What does NOT belong here
+## What lives here
 
-- Real customer data, interview transcripts, or proprietary metrics
-- Company-confidential strategy documents
-- Demo materials intended for external audiences (use pm-ai-demo instead)
-- One-off experiments or unreviewed drafts
+This repo should contain:
+
+- workflow definitions
+- operating principles
+- PM templates
+- evaluation rubrics
+- setup instructions
+- automation and connector guidance
+- NotebookLM operating rules
+- safe sample inputs and outputs
+- roadmap for improving the system
+
+## What should NOT live here
+
+This repo should NOT contain:
+
+- raw customer transcripts
+- proprietary product strategy from an employer
+- copied internal decks
+- real customer data
+- sensitive access tokens
+- confidential metrics exports
+- anything intended for interview/demo usage if it is not sanitized
+
+## Main folders
+
+- `01-architecture/`
+  The overall design of the PM AI operating system, tool boundaries, and system map
+
+- `02-workflows/`
+  Daily, weekly, monthly, and quarterly PM workflows
+
+- `03-templates/`
+  Reusable templates for PRDs, launches, retros, updates, and reviews
+
+- `04-evals/`
+  Rubrics and quality checks for PM and AI outputs
+
+- `05-automation/`
+  Workflow automation guidance, MCP setup notes, and agent boundaries
+
+- `06-notebooklm/`
+  Rules for structuring the NotebookLM knowledge layer and ingesting sources
+
+- `07-examples/`
+  Safe sample inputs and outputs for testing workflows
+
+- `08-roadmap/`
+  Planned improvements to the PM AI operating system
+
+- `09-ops/`
+  Setup, maintenance, and security rules for running the system well
+
+## Relationship to other repos
+
+- `pm-ai-skills` = reusable Claude Code Skills
+- `pm-ai-os` = the operating system and workflow layer
+- `pm-ai-demo` = sanitized interview-safe demo materials
+
+## Core principle
+
+This repo is the operating spine, not the warehouse.
+
+That means:
+
+- methods belong here
+- workflows belong here
+- templates belong here
+- evals belong here
+
+But the source-of-truth research corpus belongs in NotebookLM and the raw work often belongs in company systems such as docs, support tools, analytics platforms, ticketing systems, and customer research tools.
+
+## Success criteria
+
+This PM AI OS is successful when it helps me:
+
+- move from context to decisions faster
+- produce more consistent PM outputs
+- avoid reinventing workflows
+- reduce low-value manual work
+- improve quality through repeatable evaluation
+- demonstrate strong Senior/Principal PM judgment
