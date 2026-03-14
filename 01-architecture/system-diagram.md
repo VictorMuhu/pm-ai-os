@@ -1,5 +1,18 @@
 # PM AI Operating System Architecture
 
+```mermaid
+flowchart TB
+    A[Tool Layer<br/>Analytics • Support • Research • Experimentation] --> B[Knowledge Layer<br/>NotebookLM<br/>Research Corpus • Customer Voice • Docs • Insights]
+    B --> C[Skill Layer<br/>pm-ai-skills<br/>Reusable PM Methods]
+    C --> D[Operating System Layer<br/>pm-ai-os<br/>Workflows • Templates • Evals • Automation]
+    D --> E[Demo Layer<br/>pm-ai-demo<br/>Sanitized Interview Walkthroughs]
+
+    A -. raw signals .-> B
+    B -. grounded context .-> C
+    C -. structured outputs .-> D
+    D -. polished demonstration .-> E
+```
+
 ## Overview
 
 The PM AI Operating System is a layered system designed to help product managers move from raw information to product decisions quickly and consistently.
