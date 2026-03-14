@@ -1,31 +1,69 @@
 # Weekly PM Loop
 
-> Starter file. Define your weekly AI-assisted PM routine here.
+A structured weekly workflow for a product manager using the PM AI operating system.
 
-## Purpose
+---
 
-A structured weekly cadence to review metrics, maintain stakeholder alignment, and make progress on strategic work.
+## Weekly Planning
 
-## Inputs
+Set direction for the week before executing.
 
-- Weekly metrics snapshot
-- Sprint review notes
-- Stakeholder feedback or escalations
-- Roadmap and planning context
+- review product goals and current OKR or initiative status
+- assess progress from the prior week
+- adjust priorities based on new information, blockers, or shifts in context
+- confirm the week's focus areas with the team if needed
 
-## Loop steps
+---
 
-1. **Monday**: Review weekly metrics, run Metric Debugging skill if anything is off
-2. **Tuesday–Thursday**: Deep work on specs, research, or planning; use skills as needed
-3. **Friday**: Write stakeholder update using Stakeholder Update skill; review sprint progress; plan next week
+## Customer Signal Review
 
-## AI touchpoints
+Stay close to what customers are experiencing.
 
-- Metric Debugging skill for anomalies in the weekly metrics review
-- Stakeholder Update skill for Friday written update
-- Prioritization skill if backlog grooming is scheduled this week
+- analyze support ticket themes and escalations from the past week
+- review qualitative customer feedback from any channel
+- revisit discovery learnings and check for patterns using the `customer-synthesis` skill
+- flag any signals that should influence current priorities or upcoming roadmap decisions
 
-## Notes
+---
 
-- Adapt to your team's sprint cadence and review rhythm.
-- Weekly loop should produce at least one substantive stakeholder update.
+## Product Execution Review
+
+Keep active initiatives moving cleanly.
+
+- review status of in-flight initiatives and open tickets
+- identify and unblock teams stuck on dependencies or open questions
+- ensure specs are clear enough for engineering and design to execute
+- use the `spec-critic` skill on any docs that are about to move to implementation
+
+---
+
+## Metrics Review
+
+Understand how the product is performing.
+
+- review core product metrics for the week
+- identify trends across multiple weeks, not just point-in-time changes
+- investigate anomalies using the `metric-debugging` skill
+- assess whether any experiment needs a go/no-go decision this week
+
+---
+
+## Stakeholder Updates
+
+Keep stakeholders informed with minimal noise.
+
+- prepare the weekly written update using the `stakeholder-update` skill
+- highlight concrete progress, not activity
+- surface risks and blockers clearly with owners and mitigation plans
+- include any asks that require stakeholder input or decisions
+
+---
+
+## System Improvement
+
+Improve the operating system, not just the outputs.
+
+- note any workflow that felt slow, unclear, or produced weak output this week
+- refine a skill definition if a prompt underperformed
+- update templates or checklists if a recurring gap was identified
+- log improvement ideas in the roadmap backlog if they need more time to address
