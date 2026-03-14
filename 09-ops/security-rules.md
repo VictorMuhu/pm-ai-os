@@ -1,31 +1,61 @@
-# Security Rules
+# Security Rules for PM AI OS
 
-> Rules for keeping the PM AI OS secure and compliant.
+Rules for keeping the PM AI operating system secure, clean, and safe to use across contexts.
 
-## Data handling
+---
 
-- Never store customer PII in any of the three repos
-- Never commit API keys, tokens, or passwords — use environment variables or a secrets manager
-- Keep pm-ai-os and pm-ai-skills as private GitHub repos unless explicitly decided to make public
-- pm-ai-demo may be made public but only after thorough sanitization review
+## General Principles
 
-## Access control
+- do not store company-confidential documents in any repo in this system
+- avoid storing real customer data, names, or identifying information
+- never commit credentials, API keys, or access tokens to any repository
+- when in doubt about whether content is safe to store, do not store it
 
-- Use SSH or personal access tokens for GitHub authentication (not passwords)
-- Rotate GitHub tokens annually or after any suspected exposure
-- Do not share repo access with unauthorized users
+---
 
-## AI input/output hygiene
+## Allowed Content
 
-- Do not paste confidential documents directly into Claude.ai chat (use Claude Code or API with appropriate controls instead)
-- Review AI outputs before sharing externally — AI can hallucinate or surface context inappropriately
-- Do not use AI to generate content that could be mistaken for real customer evidence
+The following content is appropriate for this system:
 
-## Incident response
+- reusable PM workflows and method definitions
+- generalized templates and frameworks
+- sanitized demo materials using fictional examples
+- synthesized research with identifying details removed
+- skill definitions, rubrics, and operating documentation
 
-- If a secret is accidentally committed: rotate it immediately, then use `git filter-branch` or BFG Repo Cleaner to remove it from history
-- If confidential data is pushed: take the repo private immediately, audit access, notify relevant stakeholders
+---
 
-## Notes
+## Restricted Content
 
-- Review this document annually or after any security incident.
+The following content must not be stored in any repository in this system:
+
+- proprietary roadmaps or internal strategy documents from an employer
+- internal customer interview transcripts or recordings
+- internal dashboards or screenshots showing confidential metrics
+- confidential metrics exports from company analytics systems
+- legal agreements, financial data, or compliance documents
+- anything marked confidential, restricted, or internal by an employer
+
+---
+
+## GitHub Guidelines
+
+- all repositories in this system should remain private unless explicitly reviewed for public sharing
+- use strong authentication: enable two-factor authentication on GitHub
+- never commit secrets, credentials, tokens, or environment variables to any repository
+- use `.gitignore` to prevent accidental commits of sensitive file types
+- review repository contents before changing visibility from private to public
+
+---
+
+## Demo Safety
+
+Anything placed in `pm-ai-demo` must be safe to show externally.
+
+That means:
+
+- all examples must be fictional and clearly not derived from a real employer
+- no real customer names, company names, or internal product names
+- no screenshots that reveal confidential interfaces or unreleased features
+- no metrics or data points that could be traced back to a real company
+- when in doubt, make the example more generic before adding it to the demo repo
