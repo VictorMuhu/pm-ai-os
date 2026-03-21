@@ -12,7 +12,7 @@ This repository exists to:
 - connect tools, workflows, and templates into one operating model
 - make the system portable and version-controlled
 - separate reusable skills from company-specific execution
-- provide a durable foundation for high-leverage PM work
+- provide a durable foundation for high-leverage PM work.
 
 ## What lives here
 
