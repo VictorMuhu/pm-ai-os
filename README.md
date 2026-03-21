@@ -2,7 +2,7 @@
 
 A private repository for my PM AI operating system.
 
-This repo contains the workflows, templates, evals, operating rules, setup instructions, and supporting materials that make the PM AI workflow actionable end to end.
+This repo contains the workflows, templates, evals, operating rules, setup instructions, and supporting materials that make the PM AI workflow actionable end-to-end.
 
 ## Purpose
 
